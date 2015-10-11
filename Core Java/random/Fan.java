@@ -7,7 +7,7 @@ public class Fan{
 		Scanner scanner = new Scanner(System.in);
 		try{			
 			int a = scanner.nextInt();
-			if(a <= 6){
+			if(a>0 && a <= 6){
 				out.println("Multiplying the number by 3");
 				int temp = a * 3;
 				int product = temp;

@@ -1,0 +1,2 @@
+package AOne;
+class Test{}

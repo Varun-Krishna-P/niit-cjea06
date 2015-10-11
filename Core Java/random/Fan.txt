@@ -1,0 +1,5 @@
+Please choose a number between 1 to 6: Multiplying the number by 3
+the product is: 18
+The product is: 60
+The sum is: 6
+No matter what you do which number you choose, you will end up here...
