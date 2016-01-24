@@ -1,6 +1,6 @@
 import java.sql.*;
 import java.util.concurrent.atomic.AtomicInteger;
-class InsertStatement{
+class InsertStatement{    
     public static void main(String... x){
         try{
             Class.forName("org.postgresql.Driver");
@@ -8,13 +8,10 @@ class InsertStatement{
             final String url = "jdbc:postgresql://localhost/JDBCBookList";
             final String user = "postgres";
             final String pass = "root";
-            AtomicInteger id = new AtomicInteger();
-            id.incrementAndGet();
-            System.out.println(id);
             Connection connection = DriverManager.getConnection(url, user, pass);
             Statement statement = connection.createStatement();
             String insertQuery = "Insert into booklist "+
-                                    "values ("+id+",'book1', '100.00', 'a samplebook')";
+                                    "values (5,'book1', '100.00', 'a samplebook')";
             int rs = statement.executeUpdate(insertQuery);
             System.out.println("inserted: "+rs);
             
