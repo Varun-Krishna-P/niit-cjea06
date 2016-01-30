@@ -26,6 +26,7 @@ class CreateStatement{
 }
 /*
     javac fn.java
+    http://stackoverflow.com/questions/26766843/class-fornameorg-postgresql-driver-error
     java -cp .;postgresql.jar DBProcessor
     java -cp .;postgresql-9.3-1103.jdbc3.jar CreateStatement
     java -classpath .;postgresql-9.3-1103.jdbc3.jar CreateStatement
